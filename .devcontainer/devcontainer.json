@@ -1,7 +1,7 @@
-{ 
-"name": "BreakLang", 
-"dockerComposeFile": "docker-compose.yml", 
-"service":"devcontainer", 
-"workspaceFolder": "workspaces",
-"forwardPorts": [5173,3000,5432,8080]
+{
+  "name": "BreakLang",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "workspaces",
+  "forwardPorts": [5173, 3000, 5432, 8080]
 }

@@ -19,4 +19,24 @@ export class AppController {
   async createUser(@Body() user: { email: string }) {
     return await this.appService.createUser(user.email);
   }
+
+  @Get('boards')
+  async getBoards() {
+    return await this.appService.getBoards();
+  }
+
+  @Post('board')
+  async createBoard(@Body() board: { title: string }) {
+    return await this.appService.createBoard(board.title);
+  }
+
+  @Get('message')
+  async getMessage() {
+    return await this.appService.getMessage();
+  }
+
+  @Post('message')
+  async createMessage(@Body() message: { message: string }) {
+    return await this.appService.createMessage(message.message);
+  }
 }

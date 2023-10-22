@@ -1,0 +1,30 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-azuretools.vscode-docker",
+    "adam-bender.commit-message-editor",
+    "anteprimorac.html-end-tag-labels",
+    "ashinzekene.nestjs",
+    "bradgashler.htmltagwrap",
+    "chunsen.bracket-select",
+    "codezombiech.gitignore",
+    "cweijan.vscode-redis-client",
+    "F4Bz3.htmlautocompletion",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.code-runner",
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "github.vscode-github-actions",
+    "GitHub.vscode-pull-request-github",
+    "golang.go",
+    "jomeinaster.bracket-peek",
+    "naumovs.color-highlight",
+    "oderwat.indent-rainbow",
+    "Prisma.prisma",
+    "rangav.vscode-thunder-client",
+    "eamodio.gitlens",
+    "hookyqr.beautify"
+  ]
+}
