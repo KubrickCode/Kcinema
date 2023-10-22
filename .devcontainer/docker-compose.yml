@@ -24,7 +24,6 @@ services:
     volumes:
       - mongo-data:/data/db
     network_mode: service:devcontainer
-    
 
   redis:
     image: redis:alpine
