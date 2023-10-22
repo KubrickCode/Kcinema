@@ -1,0 +1,6 @@
+{ 
+"name": "BreakLang", 
+"dockerComposeFile": "docker-compose.yml", 
+"service":"devcontainer", 
+"workspaceFolder": "workspaces" 
+}
