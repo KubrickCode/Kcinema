@@ -1,0 +1,11 @@
+{
+  "packageManager": "yarn@3.6.4",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "server": "cd server && cd nest && yarn dev",
+    "client": "cd client && cd react && yarn dev",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  }
+}

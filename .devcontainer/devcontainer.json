@@ -1,0 +1,13 @@
+{
+  "name": "voca",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "workspace",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [5173, 3000, 5432],
+  "remoteEnv": {
+    "GIT_EDITOR": "code --wait",
+    "KUBE_EDITOR": "code --wait"
+  },
+  "remoteUser": "root",
+  "postCreateCommand": "bash .devcontainer/post-create.sh"
+}
