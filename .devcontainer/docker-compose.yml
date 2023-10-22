@@ -3,7 +3,7 @@ services:
   devcontainer:
     image: mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye
     environment:
-      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB}
     volumes:
       - ../..:/workspaces:cached
     command: sleep infinity
@@ -41,3 +41,4 @@ services:
 
 volumes:
   postgres-data:
+  mongo-data:

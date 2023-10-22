@@ -6,6 +6,7 @@
   "scripts": {
     "server": "cd server && cd nest && yarn dev",
     "client": "cd client && cd react && yarn dev",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "studio":"cd server && cd nest && yarn prisma studio"
   }
 }
