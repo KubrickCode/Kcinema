@@ -1,0 +1,12 @@
+{
+	"name": "Node.js & TypeScript",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "devcontainer",
+  "workspaceFolder": "workspaces",
+  "forwardPorts": [5173, 3000, 5432, 8080],
+	"features": {
+		"ghcr.io/devcontainers/features/go:1": {
+			"version": "1.19"
+		}
+	}
+}
