@@ -18,11 +18,11 @@ export class AppService {
   }
 
   async createUser(email: string) {
-    await this.prisma.user.create({ data: { email } });
+    await this.prisma.users.create({ data: { email } });
   }
 
   async getUsers() {
-    return await this.prisma.user.findMany({});
+    return await this.prisma.users.findMany({});
   }
 
   async createBoard(title: string) {

@@ -33,6 +33,15 @@ const App = () => {
     await axios.post("http://localhost:3000/message", { message });
   };
 
+  const getGoUser = async () => {
+    const response = await axios.get("http://localhost:5000/users");
+    console.log(response);
+  };
+
+  const createGoUser = async () => {
+    await axios.post("http://localhost:5000/user", { email });
+  };
+
   return (
     <>
       <div>
@@ -67,6 +76,17 @@ const App = () => {
           placeholder="메시지 내용"
         ></input>
         <button onClick={createMessage}>메시지 저장</button>
+      </div>
+      <div>
+        <button onClick={getGoUser}>go 유저 불러오기</button>
+        <input
+          type="text"
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          placeholder="이메일"
+        ></input>
+        <button onClick={createGoUser}>go 유저 저장</button>
       </div>
     </>
   );
