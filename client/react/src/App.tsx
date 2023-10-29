@@ -25,7 +25,7 @@ const App = () => {
   };
 
   const getMessage = async () => {
-    const response = await axios.get("http://localhost:3000/message");
+    const response = await axios.get("http://localhost:3000/messages");
     console.log(response);
   };
 

@@ -30,7 +30,7 @@ export class AppController {
     return await this.appService.createBoard(board.title);
   }
 
-  @Get('message')
+  @Get('messages')
   async getMessage() {
     return await this.appService.getMessage();
   }

@@ -3,4 +3,7 @@ go 1.19
 use (
   ./server/go
   ./server/go/pg
+  ./server/go/libs/tmdb
+  ./server/go/libs/db
+  ./server/go/apps/tmdb_movie_scraper
 )
